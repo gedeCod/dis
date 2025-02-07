@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: url(image/lal.jpg) fixed repeat;
+    backdrop-filter: blur(2px);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.4rem;
+    background-color: rgb(49, 72, 92);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+header .logo i{
+    color: red;
+    font-weight: bold;
+    font-size: 2.5rem;
+    background: rgb(42, 72, 99);
+    border-radius: 10px;
+    padding: 4px;
+    border-left: 2px solid rgb(21, 55, 85);
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+header nav a{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+header nav a:hover{
+    border-bottom: 3px solid red;
+    border-radius: 1rem;
+}
+header input {
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    color: red;
+}
+.part1 .text{
+    z-index: 10;
+    margin-right: -10rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+.part1 .dot{
+    width: 50rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    margin-top: -15rem;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 1rem;
+    padding:2px;
+    flex-wrap: wrap;
+
+}
+.part1 .dot span{
+    background-color: rgb(99, 118, 135);
+    padding: 2px;
+    border-radius: 40%;
+}
+.part1 img{
+    animation: rotloi 5s ease-in-out infinite;
+    margin-left: -22rem;
+}
+.part1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    border-bottom: 2px solid rgb(30, 63, 93);
+}
+.part1 .ico .logo i{
+    color: red;
+    font-weight: bold;
+    font-size: 15rem;
+    background: url("image/po\ \(4\).jpg") no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 4px;
+    border-left: 2px solid rgb(21, 55, 85);
+}
+
+@keyframes rotloi {
+    0%{
+        transform: translateY(0deg);
+    }
+    100%{
+        transform: translateY(360deg);
+    }
+}
+.part1 .text p{
+    color: aliceblue;
+    background-color: rgb(64, 107, 146);
+    border-radius: 5rem;
+    border-top-left-radius:1px ;
+    width: 20rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+.part1 .text a{
+    color: aliceblue;
+    background-color: red;
+    padding: 10px;
+    border-radius: 7px;
+    width: 10rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.part1 .text h1 {
+    color: aliceblue;
+    font-size: 2rem;
+}
+.part1 .text h1 span{
+    color: red;
+    font-size: 1.6rem;
+    text-shadow: red;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+}
+.part2 h1{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.part2 h1 span{
+    color: red;
+    font-size: 1.8rem;
+}
+.part2 .prod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.part2 .prod .item{
+    width: 20rem;
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(116, 142, 165);
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border-radius: 15px;
+}
+.part2 .prod .item img{
+    width: 19rem;
+    border-radius: 10px;
+    height: 19rem;
+}
+.part2 .prod .item a{
+    margin-bottom: -2rem;
+    z-index: 10;
+    margin-right: -15rem;
+    border-radius: 5px;
+    background-color: red;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.part2 .prod .item span{
+    color: aliceblue;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.part2 .prod .item p{
+    color: red;
+    font-weight: bold;
+}
+footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: aliceblue;
+    display: flex;
+    border-top: 2px solid rgb(126, 165, 199);
+    flex-direction: column;
+}
+footer .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+footer .main .line h1{
+    color: aliceblue;
+    border-bottom: 2px solid red;
+}
+footer .head{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+}
+footer .head .logs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .head input{
+    padding: 5px;
+    font-weight: bold;
+    color: red;
+    border: none;
+    border-radius: 7px;
+}
+footer .head i{
+    color: red;
+    font-weight: bold;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    padding: 4px;
+    border-left: 2px solid rgb(21, 55, 85);
+}
+footer .main span {
+    height: 10rem;
+    padding: 1px;
+    background-color: rgb(81, 125, 164);
+}
